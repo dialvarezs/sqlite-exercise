@@ -24,7 +24,7 @@ int main()
         return 1;
     }
 
-    char *sql_insert = "INSERT INTO Users (name, email) VALUES ('Juan Pérez' 'jp@test.com')";
+    char *sql_insert = "INSERT INTO Users (name) VALUES ('Juan Pérez' 'jp@test.com')";
     rc = execute_query(db, sql_insert);
 
     char *sql_query = "SELECT * FROM user";
